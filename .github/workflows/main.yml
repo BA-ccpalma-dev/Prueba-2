@@ -1,0 +1,20 @@
+name: "primera automatizacion"
+
+on: [workflow_dispatch] #disparador manual
+
+env:
+  nombre: "Gabriela"
+  
+jobs:   
+  steps:
+    name: concatenar
+    runs-on: ubuntu
+    run:
+    $apellido="Maradiaga"
+    echo {{env.nombre}} 
+    echo $apellido
+    
+  
+  
+
+
