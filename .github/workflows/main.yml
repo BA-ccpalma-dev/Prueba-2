@@ -5,11 +5,12 @@ on: [workflow_dispatch] #disparador manual
 env:
   nombre: "Gabriela"
   
-jobs:   
+jobs:  
+
   steps:
     name: concatenar
-    runs-on: ubuntu
-    run:
+    runs-on: ubuntu-lastest
+    run |
     $apellido="Maradiaga"
     echo {{env.nombre}} 
     echo $apellido
